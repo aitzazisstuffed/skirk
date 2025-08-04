@@ -1,3 +1,6 @@
+//! Skirk - A port scanner written in Rust.
+//!
+//! This script acts as a binder to connect C code to Rust
 use std::env;
 use std::path::Path;
 
