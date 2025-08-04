@@ -1,0 +1,31 @@
+[package]
+name = "skirk"
+version = "0.0.1"
+authors = ["aitzazisstuffed <aitzazisstuffed@gmail.com>"]
+edition = '2024'
+rust-version = "1.68"
+description = "Skirk is a port scanner that identify open ports on a computer network"
+documentation = "https://github.com/aitzazisstuffed/skirk/wiki"
+readme = "README.md"
+homepage = "https://aitzazisstuffed.github.io/skirk"
+repository = "https://github.com/aitzazisstuffed/skirk"
+license-file = "LICENSE.txt"
+keywords = ["scanner", "cybersecurity", "port", "network", "security"]
+categories = ["security"]
+build = "build.rs"
+links = "skirk"
+include = [".skirk.conf"]
+publish = ["crates.io"] # Default behaviour
+default-run = "skirk"
+
+[lints.rust]
+unsafe_code = "deny"
+dead_code = "warn"
+missing_docs = "warn"
+
+[lints.clippy]
+all = "warn"
+pedantic = "warn"
+
+[badges]
+maintenance = { status = "experimental" }
