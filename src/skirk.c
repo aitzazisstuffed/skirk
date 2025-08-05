@@ -1,5 +1,5 @@
 #include <stdio.h>
 
-int main() {
-  return 0;
+const char* skirk_version(void) {
+    return "Skirk v0.1.0";
 }
