@@ -17,5 +17,5 @@ If this installation was from cargo, please report this issue to the repository 
     }
 
     println!("cargo:rustc-link-arg={}", object_path.display());
-    println!("cargo:rerun-if-changed=bin/skirk.o");
+    println!("cargo:rerun-if-changed=bin/skirk.so");
 }
