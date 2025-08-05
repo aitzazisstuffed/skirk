@@ -7,7 +7,7 @@ use std::path::Path;
 
 fn main() {
     let manifest_dir = env::var("CARGO_MANIFEST_DIR").unwrap();
-    let object_path = Path::new(&manifest_dir).join("bin/skirk.so");
+    let object_path = Path::new(&manifest_dir).join("bin/libskirk.so");
 
     if !object_path.exists() {
         panic!("\x1b[34m\
@@ -17,5 +17,5 @@ If this installation was from cargo, please report this issue to the repository 
     }
 
     println!("cargo:rustc-link-arg={}", object_path.display());
-    println!("cargo:rerun-if-changed=bin/skirk.so");
+    println!("cargo:rerun-if-changed=bin/libskirk.so");
 }
