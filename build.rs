@@ -7,7 +7,7 @@ use std::path::Path;
 
 fn main() {
     let manifest_dir = env::var("CARGO_MANIFEST_DIR").unwrap();
-    let object_path = Path::new(&manifest_dir).join("bin/skirk.o");
+    let object_path = Path::new(&manifest_dir).join("bin/skirk.so");
 
     if !object_path.exists() {
         panic!("\x1b[34m\
