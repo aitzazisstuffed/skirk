@@ -19,7 +19,7 @@ publish = ["crates.io"] # Default behaviour
 default-run = "skirk"
 
 [lints.rust]
-unsafe_code = "deny"
+unsafe_code = "warn"
 dead_code = "warn"
 missing_docs = "warn"
 
