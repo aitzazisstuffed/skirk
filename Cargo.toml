@@ -33,3 +33,6 @@ maintenance = { status = "experimental" }
 [[bin]]
 name = "skirk"
 path = "src/bin/skirk.rs"
+
+[build-dependencies]
+bindgen = "0.71.0"
