@@ -2,6 +2,10 @@ use std::ffi::CStr;
 use std::os::raw::c_char;
 use std::env;
 
+unsafe extern "C" {
+    fn skirk_version() -> *const c_char;
+}
+
 fn main() {
     let args: Vec<String> = env::args().collect();
 
@@ -22,8 +26,4 @@ fn main() {
     } else {
         println!("Usage: skirk --version");
     }
-}
-
-extern "C" {
-    fn skirk_version() -> *const c_char;
 }
